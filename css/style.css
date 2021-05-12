@@ -16,6 +16,10 @@
 .mrg-xl{
     margin-top: 60px;
 }
+
+.mrg-xxl{
+    margin-top: 90px;
+}
 .container-fluid {
     width: 100%;
     background-color: rgb(98, 0, 128);
@@ -27,7 +31,7 @@
 
 .app main{
     height: calc(100vh - 90px);
-    background-color: burlywood;
+    background-color: #141922;
 }
 
 .app footer{
@@ -43,17 +47,36 @@ main .content{
     background-color: #141922 ;
     overflow-y: scroll;
     /* tolgo il margine della topbar */
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
 }
 
 .topbar{
-    height: 60px;
+    height: 90px;
     width: 100%;
-    background-color: rgba(165, 123, 32, 0.699);
+    background-color: rgba(0, 0, 0, 0.411);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1001;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right: 30px;
+
+
+}
+
+.upgrade{
+    color: white;
+    height: 40px;
+    /* Non voglio che il testo vada a capo */
+    min-width:max-content;
+    line-height: 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+ 
 
 }
 
