@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+.mrg{
+    margin-top: 15px;
+} 
+
+.mrg-l{
+    margin-top: 30px;
+}
+
+.mrg-xl{
+    margin-top: 60px;
+}
+.container-fluid {
+    width: 100%;
+    background-color: rgb(98, 0, 128);
+}
+
+.app{
+    max-height: 100vh;
+}
+
+.app main{
+    height: calc(100vh - 90px);
+    background-color: burlywood;
+}
+
+.app footer{
+    background-color: #282828;
+    height: 90px;
+}
+
+main .sidebar{
+    background: #ccc;
+}
+
+main .content{
+    background-color: #141922 ;
+    overflow-y: scroll;
+    /* tolgo il margine della topbar */
+    height: calc(100% - 60px);
+}
+
+.topbar{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(165, 123, 32, 0.699);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+
+}
+
+.example{
+    height: 200vh;
+    width: 200px;
+    margin: 0 auto;
+    background-color: teal ;
+}
+
