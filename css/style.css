@@ -84,7 +84,8 @@ main .sidebar{
     vertical-align:super;
 }
 .text.xxl{
-    font-size: large
+    font-size: large;
+    overflow-x: visible;
 }
 .tex{
     font-size: small;
@@ -97,7 +98,7 @@ main .sidebar{
 }
 
 .icon.xxl{
-    font-size:40px;
+    font-size:35px;
     margin-right: 6px;
 
 }
@@ -115,22 +116,22 @@ main .sidebar{
 
 /* Blocco C */
 .side.bot{
-    background-color: tomato;
     overflow: hidden;
 
-    flex-shrink: 100;
-
-
-
-  
+    flex-shrink: 100;  
 }
 
-.side-footer{
-
-    flex-shrink: 100;
-    
-    
+.hide-hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display:none;
 }
+
+.s-foo-text{
+    display: none;
+}
+
+
 
 /* Al cambio di device compaiono i testi sulla sidebar */
 .text, .tex,.icon,.playlist, .icon.xxl{
@@ -212,7 +213,7 @@ main .content{
         background-repeat: no-repeat;
     }
 
-    .text, .icon,.playlist, .icon.xxl, .foo-text{
+    .text, .icon,.playlist, .icon.xxl, .s-foo-text, .hide-hr{
         display:inline-block;
     }
 
