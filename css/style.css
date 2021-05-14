@@ -77,7 +77,15 @@ main .sidebar{
 
 .icon{
     display: inline-block;
+    font-size: x-large;
+    margin-right: 3px;
 }
+.icon.xxl{
+    font-size:35px;
+    margin-right: 6px;
+
+}
+
 
 .text{
     font-size: small;
@@ -92,33 +100,29 @@ main .sidebar{
     margin-top: 15px;
 }
 
-.icon{
-    font-size: x-large;
-    margin-right: 3px;
-}
 
-.icon.xxl{
-    font-size:35px;
-    margin-right: 6px;
 
-}
+
 
 /* Blocco B */
-.middle{
+.side.middle{
     overflow-y: scroll;
     flex-shrink:20;
+    height: 60%;
+
 
 }
 .crea{
     display:flex;
     align-items: center;
+
 }
 
 /* Blocco C */
 .side.bot{
     overflow: hidden;
-
-    flex-shrink: 100;  
+    flex-shrink: 200; 
+    padding-bottom: 5px; 
 }
 
 .hide-hr{
@@ -131,13 +135,12 @@ main .sidebar{
     display: none;
 }
 
-
-
 /* Al cambio di device compaiono i testi sulla sidebar */
 .text, .tex,.icon,.playlist, .icon.xxl{
     display: none;
 }
 
+/* Blocco MAIN */
 main .content{
     background-color: #141922 ;
     overflow-y: scroll;
@@ -180,7 +183,7 @@ main .content{
     background-color: teal ;
 }
 
-
+/* Footer */
 .app footer{
     background-color: #282828;
     height: 90px;
@@ -201,7 +204,7 @@ main .content{
     width: 40%;
 }
 
-
+/* Passaggio alla modalità non smartphone */
 @media only screen and (min-width: 576px) {
     .sb{ 
         margin-top: 5px;
@@ -213,11 +216,11 @@ main .content{
         background-repeat: no-repeat;
     }
 
-    .text, .icon,.playlist, .icon.xxl, .s-foo-text, .hide-hr{
+    .text, .icon,.playlist, .icon.xxl, .s-foo-text {
         display:inline-block;
     }
 
-    .tex{
+    .hide-hr, .tex{
         display:block;
     }
 
