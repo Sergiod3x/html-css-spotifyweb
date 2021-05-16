@@ -240,7 +240,7 @@ main .content{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: start;
     /* align-content: space-between; */
 
 }
@@ -452,6 +452,22 @@ main .content{
     }
 
    
+}
+
+@media only screen and (min-width: 768px) {
+
+    .rec, .cre, .pop{
+        width: 25%;
+    
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .rec, .cre, .pop{
+        width: calc((100%)/6);
+    
+    }
 }
 
 @media only screen and (max-height: 220px) {
