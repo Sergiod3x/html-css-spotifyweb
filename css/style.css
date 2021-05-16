@@ -29,9 +29,21 @@
 .fxxl{
     font-size: xx-large;
 }
+.r-mrg-s{
+    margin-right: 3px;
+}
+.l-mrg-m{
+    margin-left: 5px;
+}
+.l-mrg-l{
+    margin-left: 10px;
+}
 
 .mrg{
     margin-top: 15px;
+} 
+.mrg-s{
+    margin-top: 10px;
 } 
 
 .mrg-l{
@@ -70,7 +82,7 @@ main .sidebar{
 
 }
 
-/* Blocco A */
+/* Blocco A sidebar*/
 
 .top{
     height: 220px;
@@ -94,6 +106,7 @@ main .sidebar{
     background-image: url(../img/logo-small.svg);
     background-repeat: no-repeat;
     width: 100%;
+    z-index: 1001;
 }
 
 .icon{
@@ -125,7 +138,7 @@ main .sidebar{
 
 
 
-/* Blocco B */
+/* Blocco B sidebar*/
 .side.middle{
     overflow-y: scroll;
     flex-shrink:20;
@@ -139,31 +152,19 @@ main .sidebar{
 
 }
 
-/* Blocco C */
-.side.bot{
-    height: 100%;
-    overflow: hidden;
-    flex-shrink: 30; 
-    display: flex;
-    flex-wrap: wrap;
-    align-content:flex-end;
-    margin-bottom: 5px;
-  
-}
+/* Blocco C sidebar*/
 
 .hide-hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
     display:none;
-    width: 100%;
 }
+
 
 .s-foo-text{
     display: none;
 }
 
 /* Al cambio di device compaiono i testi sulla sidebar */
-.text, .tex,.icon,.playlist, .icon.xxl{
+.text, .tex,.icon,.playlist, .icon.xxl, .s-foo-text, .installa {
     display: none;
 }
 
@@ -205,35 +206,65 @@ main .content{
     padding-right: 30px;
  }
 
+ /* Core */
 
+ /* Schede */
  .schede-space{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 20px;
-
 }
  .schede{
      width: 600px;
      display: flex;
      flex-wrap: wrap;
      justify-content:space-around;
-
  }
-
  .tp{
      margin-left: 15px;
      margin-bottom: 30px;
  }
  
-
+/* 
 .example{
     height: 200vh;
     width: 200px;
     margin: 0 auto;
     background-color: teal ;
+} */
+
+.core{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+.cat{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    /* align-content: space-between; */
+
+}
+.tit{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.rec, .cre, .pop{
+    width: 50%;
+
+}
+.rec img,.cre img, .pop img{
+    width: 95%;
+    object-fit:contain;
+    margin-bottom: 15px;
+  }
 
 /* Footer */
 .app footer{
@@ -381,7 +412,7 @@ main .content{
         background-repeat: no-repeat;
     }
 
-    .text, .icon,.playlist, .icon.xxl, .s-foo-text {
+    .text, .icon,.playlist, .icon.xxl, .s-foo-text, .installa {
         display:inline-block;
     }
 
@@ -392,8 +423,42 @@ main .content{
     main .sidebar{
         padding-left: 15px;
         padding-right: 15px;
-        
-        
+    }
+
+    .side.bot{
+        height: 100%;
+        overflow: hidden;
+        flex-shrink: 30; 
+        display: flex;
+        flex-wrap: wrap;
+        align-content:flex-end;
+        margin-bottom: 5px;
+      
+    }
     
+    .hide-hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .allinea{
+       display: flex;
+       align-items: center;
+    }
+
+    .icon-allinea{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .installa-text{
+        margin-left: 0px;
+    }
+
+   
+}
+
+@media only screen and (max-height: 220px) {
+    .side.bot{
+        display: none;
     }
 }
