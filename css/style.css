@@ -227,14 +227,7 @@ main .content{
      margin-bottom: 30px;
  }
  
-/* 
-.example{
-    height: 200vh;
-    width: 200px;
-    margin: 0 auto;
-    background-color: teal ;
-} */
-
+/* Copertine main */
 .core{
     display: flex;
     flex-wrap: wrap;
@@ -264,6 +257,10 @@ main .content{
     width: 95%;
     object-fit:contain;
     margin-bottom: 15px;
+  }
+
+  .pop img{
+      border-radius: 50%;
   }
 
 /* Footer */
