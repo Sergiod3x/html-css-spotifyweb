@@ -234,7 +234,6 @@ main .content{
     width: 100%;
     justify-content: space-around;
     padding-left: 15px;
-    padding-right: 15px;
 }
 .cat{
     display: flex;
@@ -249,18 +248,45 @@ main .content{
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
+.album-container{
+    width:  calc(100% / 2 - 15px);
+    margin-right: 15px;
+}
 .rec, .cre, .pop{
-    width: 50%;
+    position: relative;
+    width: 100%;
 
 }
 .rec img,.cre img, .pop img{
-    width: 95%;
+    width: 100%;
     object-fit:contain;
-    margin-bottom: 15px;
   }
 
   .pop img{
       border-radius: 50%;
+  }
+
+  .layover{
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .cre:hover .layover, .rec:hover .layover{
+    opacity: 1;
+  }
+  .pop:hover .layover{
+    opacity: 1;
+    border-radius: 50%;
+
   }
 
 /* Footer */
@@ -456,16 +482,18 @@ main .content{
 
 @media only screen and (min-width: 768px) {
 
-    .rec, .cre, .pop{
-        width: 25%;
+    .album-container{
+        width: calc( 100% / 4 - 15px);
+        margin-right: 15px;
     
     }
     
 }
 
 @media only screen and (min-width: 992px) {
-    .rec, .cre, .pop{
-        width: calc((100%)/6);
+    .album-container{
+        width: calc( 100% / 6 - 15px);
+        margin-right: 15px;
     
     }
 }
