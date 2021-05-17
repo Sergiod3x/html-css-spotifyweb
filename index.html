@@ -22,8 +22,8 @@
                     <div class="tittle">
                         <div class="x"></div>
                     </div>
-                    <div class="sb home wh">
-                        <div class="icon"><i class="fas fa-home"></i></div>
+                    <div class="sb home gr">
+                        <div class="icon wh"><i class="fas fa-home"></i></div>
                         <div class="text">Home</div>
                     </div>
                     <div class="sb cerca gr">
@@ -37,7 +37,7 @@
                 </div>
                 <!-- Blocco B sidebar -->
                 <div class="side middle gr">
-                    <div class="playlist fs "><b>PLAYLIST</b></div>
+                    <div class="playlist fs wh "><b>PLAYLIST</b></div>
                     <div class="crea">
                         <div class="icon xxl"><i class="fas fa-plus-square"></i></div>
                         <div class="text xxl"> <nobr> Crea Playlist</nobr></div>
@@ -56,21 +56,21 @@
                     <div class="hide-hr"><hr></div>  
                     <div class="allinea">
                         <div class="icon-allinea r-mrg-s l-mrg-m mrg-s fxl"><i class="fas fa-user-circle"></i></div>
-                        <div class="s-foo-text">John Doef</div>   
+                        <div class="s-foo-text wh">John Doef</div>   
                     </div>
                 </div>
             </div>
             <div class="content mrg-xxl col-xs-11 col-sm-8 col-md-9 col-lg-10">
                 <!-- La topbar ha un offset necessario per la sua natura di oggetto fixed -->
-                <div class="topbar col-xs-offset-1 col-sm-offset-4 col-md-offset-3 col-lg-offset-2 col-xs-11 col-sm-8 col-md-9 col-lg-10">
-                    <div class="upgrade">EFFETTUA L'UPGRADE</div>
+                <div class="topbar col-xs-offset-1 col-sm-offset-4 col-md-offset-3 col-lg-offset-2 col-xs-11 col-sm-8 col-md-9 col-lg-10" id="casa">
+                    <div class="upgrade" >EFFETTUA L'UPGRADE</div>
                 </div>
                 <div class="schede-space fxs gr">
                     <div class="schede">
                         <div class="tp evidenza ">IN EVIDENZA</div>
                         <div class="tp podcast">PODCAST</div>
                         <div class="tp classifiche">CLASSIFICHE</div>
-                        <div class="tp generi">GENERI E MOOD</div>
+                        <div class="tp generi ">GENERI E MOOD</div>
                         <div class="tp uscite">NUOVE USCITE</div>
                         <div class="tp scopri">SCOPRI</div>
                     </div>
@@ -156,12 +156,12 @@
         </main>
        
         <footer>
-            <!-- /*Footer Left */ -->
+            <!-- Footer Left  -->
             <div class="foo left">
                 <div class="album cover"> <img src="./img/sinister.jpeg" alt=""></div>
                 <div class="album-name col">
-                    <div class="album-tit gr"><h3>Sinister</h3></div>
-                    <div class="track-tit gr">Brano Nome</div>
+                    <div class="album-tit wh"><h3>Sinister</h3></div>
+                    <div class="track-tit gr"> Brano Nome  </div>
                 </div>
                 <div class="album love">
                     <div class="tr-love gr"><i class="far fa-heart"></i></div>
@@ -170,22 +170,22 @@
             </div>
             <!-- Footer Center -->
             <div class="foo center col">
-                <div class="first-row gr fs">
+                <div class="first-row wh fs">
                     <div class="first-row space">
                         <div class="random"><i class="fas fa-random"></i></div>
                         <div class="back"><i class="fas fa-step-backward"></i></div>
-                        <div class="play fxxl"><i class="far fa-play-circle"></i></div>
+                        <div class="play fxxl" id="play"><i class="far fa-play-circle"></i></div>
                         <div class="next"><i class="fas fa-step-forward"></i></div>
                         <div class="repeat"><i class="fas fa-redo-alt"></i></div>
 
                     </div>
                 </div>
                 <div class="second-row">
-                    <div class="current-time fxs">0:25</div>
+                    <div class="current-time fxs wh">0:25</div>
                     <div class="total-t">
-                        <div class="current-t"></div>
+                        <div class="current-t"><div class="round" id="first-round"></div></div>
                     </div>
-                    <div class="total-time fxs">4:35</div>
+                    <div class="total-time fxs wh">4:35</div>
                 </div>
             </div>
             <!-- Footer Right -->
@@ -193,7 +193,7 @@
                 <div class="coda"><i class="fas fa-sliders-h"></i></div>
                 <div class="dispositivi"><i class="fas fa-desktop"></i></div>
                 <div class="volume-s"><i class="fas fa-volume-up"></i></div>
-                <div class="volume"> <div class="volume-level"></div></div>
+                <div class="volume"> <div class="volume-level"></div><div class="round" id="second-round"></div></div>
             </div>
         </footer>
 

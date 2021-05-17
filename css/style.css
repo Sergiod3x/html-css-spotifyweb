@@ -137,7 +137,6 @@ main .sidebar{
 
 
 
-
 /* Blocco B sidebar*/
 .side.middle{
     overflow-y: scroll;
@@ -151,6 +150,11 @@ main .sidebar{
     align-items: center;
 
 }
+
+.sb:hover,.crea:hover, .tex:hover, .installa-text:hover{
+    color: white;
+}
+
 
 /* Blocco C sidebar*/
 
@@ -206,6 +210,13 @@ main .content{
     padding-right: 30px;
  }
 
+ #casa:hover .upgrade{
+     height: 45px;
+     line-height: 45px;
+     font-size: large;
+     border-radius: 30px;
+ }
+
  /* Core */
 
  /* Schede */
@@ -225,6 +236,10 @@ main .content{
  .tp{
      margin-left: 15px;
      margin-bottom: 30px;
+ }
+
+ .tp:hover{
+     color: white;
  }
  
 /* Copertine main */
@@ -261,6 +276,7 @@ main .content{
 .rec img,.cre img, .pop img{
     width: 100%;
     object-fit:contain;
+    display: block;
   }
 
   .pop img{
@@ -337,12 +353,21 @@ main .content{
     width: 100%;
 }
 .track-tit{
-    width: 51%;
+    width: 55%;
     font-size: small;
-    margin-right: 49%;
+    margin-right: 45%;
 }
 .tr-love, .folder{
     width: 100%;
+}
+
+.tr-love:hover, .folder:hover{
+    color: white;
+}
+
+.track-tit:hover{
+    color: white;
+    text-decoration: underline;
 }
 /* Footer Center */
 .foo.center{
@@ -365,6 +390,16 @@ main .content{
 .first-row.space{
     width: 140px;
 }
+
+
+#play:hover{
+font-size: 40px;
+line-height: 40px;
+margin: 0px -4px -2px -4px;
+}
+
+
+
 .second-row{
     height: 30%;
     width: 70%;
@@ -383,6 +418,7 @@ main .content{
     margin-left: 3px;
     margin-right: 3px;
 }
+
 .current-t{
     height: 3px;
     width: 30%;
@@ -392,6 +428,28 @@ main .content{
     margin-left: -2px;
     background-color: gray;
 }
+
+.round{
+    opacity: 0;
+    height: 10px;
+    width: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.total-t:hover #first-round{
+    opacity: 1;
+    margin-top: -5px;
+    margin-left: 100%;
+}
+.total-t:hover .current-t{
+    background-color: green;
+    border:2px solid green;
+
+}
+
+
 
 /* Footer Right */
 .foo.right{
@@ -404,20 +462,33 @@ main .content{
 .volume{
     height: 3px;
     width: 50%;
-    border: 2px solid white;
+    border: 2px solid gray;
     border-radius: 50px;
-    background-color: white;
+    background-color: gray;
 }
 .volume-level{
     height: 3px;
     width: 30%;
-    border: 2px solid gray;
+    border: 2px solid white;
     border-radius: 50px;
     margin-top: -2px;
     margin-left: -2px;
-    background-color: gray;
+    background-color: white;
 }
 
+
+    
+
+
+.volume:hover #second-round{
+    opacity: 1;
+    margin-top: -6px;
+    margin-left: 24%;
+}
+.volume:hover .volume-level{
+    background-color: green;
+    border: 2px solid green;
+}
 
 
 
